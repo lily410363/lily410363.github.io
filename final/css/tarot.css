@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
+font-family: ‘cwTeXFangSong’,
+serif;
+
+body {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: 'Rye', cursive；
+}
+
+h1 {
+    color: bisque;
+    font-family: cwTeXFangSong;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: bisque;
+    font-family: cwTeXFangSong;
+    font-weight: bold;
+}
+
+/* h3 {
+    margin-top: 10px;
+    font-family: cwTeXFangSong;
+} */
+
+a.btn {
+    color: black;
+    background-color: bisque;
+    text-align: center;
+    opacity: 0.7;
+    width: 200px;
+    height: 45px;
+    line-height: 100px;
+    border-radius: 30px;
+    margin: 50px;
+    /* font-family: sans-serif; */
+    font-family: cwTeXFangSong;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    text-align: center;
+    color: grey;
+
+}
+
+.title {
+    font-family: cwTeXFangSong;
+    text-align: center;
+    color: #0d4261;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.title2 {
+    font-family: cwTeXFangSong;
+    text-align: center;
+    color: #0d4261;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+body {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.descrip {
+    margin-top: 90px;
+}

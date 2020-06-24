@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title -->
+    <title>Muscle Buildup</title>
+    <link rel="shortcut icon" href="./img/pig.ico" />
+    <!-- bootstrap cdn from google -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- self-defined css -->
+    <link rel="stylesheet" href="./css/misc.css">
+    <link rel="stylesheet" href="./css/title.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/bodypart.css">
+
+</head>
+
+<body style="background-color:#e8ecef;">
+    <!-- The title and navbar part in a container-fluid -->
+    <div class="container-fluid">
+
+        <div class="jumbotron">
+
+            <!-- title -->
+
+            <h1 class="title">台灣人口老化地圖</h1>
+            <h2 class="title title2">Aging Population Map</h2>
+        </div>
+
+    </div>
+    <div class="container">
+        <!-- central content -->
+        <div class="row">
+            <!-- left hand side -->
+            <!-- <div class="col-1"></div> -->
+            <!-- <div> -->
+            <div class="col-6">
+                <div class="bodyparts">
+                    <!-- bodypart image -->
+
+                    <!-- include all the svg parts via w3-include-html function -->
+                    <div id="bodysvg" w3-include-html="./data/countyshapes.html">
+                    </div>
+                    <img class="bodyimage" src="./img/map_big.png">
+
+
+                </div>
+                <!-- </div> -->
+
+                <!-- <div class="col-2"></div> -->
+                <!-- right hand side -->
+                <!-- <div class="col-5"> -->
+
+            </div>
+
+            <div class="col-6">
+
+                <div id="info-block">
+                    <!-- information section -->
+                    <div class="row">
+                        <div class="col-12" id="info">
+                            <!-- subtitle -->
+                            <p id="bodyname">title</p>
+                            <!-- <p id="bodyname-sub">sub</p> -->
+                            <hr>
+                            <!-- content -->
+                            <div id="content">點擊地圖查看各縣市老年人口比例</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="col-1"></div> -->
+            </div>
+
+            <br>
+        </div>
+        <!-- footer -->
+
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <footer>
+                    <hr>
+                    <p><i>&copy 2020 Lily edit<br><a
+                                href="https://lily410363.github.io">https://lily410363.github.io</a></i>
+                    </p>
+                </footer>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    </div>
+    <!-- bootstrap, jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous ">
+    </script>
+
+    <!-- w3school prewritten libary (for including html from other file) -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <!-- self written javascript -->
+    <script src="./js/training.js"></script>
+    <script src="./js/muscles.js"></script>
+    <script src="./js/ctrl-body.js"></script>
+</body>
+
+</html>
