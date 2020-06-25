@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- title -->
-    <title>Muscle Buildup</title>
-    <link rel="shortcut icon" href="./img/pig.ico" />
+    <title>Aging Map of Taiwan</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
     <!-- bootstrap cdn from google -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,6 +18,13 @@
     <link rel="stylesheet" href="./css/title.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/bodypart.css">
+
+    <!-- <style>
+        body {
+            background-image: url('./img/cover.jpg');
+        }
+    </style> -->
+
 
 </head>
 
@@ -29,8 +36,8 @@
 
             <!-- title -->
 
-            <h1 class="title">台灣人口老化地圖</h1>
-            <h2 class="title title2">Aging Population Map</h2>
+            <h1 class="title" style="color: #212f6b;">台灣人口老化地圖</h1>
+            <h2 class="title title2" style="color: #212f6b;">Aging Population Map</h2>
         </div>
 
     </div>
@@ -43,6 +50,11 @@
             <div class="col-6">
                 <div class="bodyparts">
                     <!-- bodypart image -->
+                    <!-- w3school prewritten libary (for including html from other file) -->
+                    <script src="https://www.w3schools.com/lib/w3.js"></script>
+                    <script>
+                        w3.includeHTML();
+                    </script>
 
                     <!-- include all the svg parts via w3-include-html function -->
                     <div id="bodysvg" w3-include-html="./data/countyshapes.html">
@@ -65,10 +77,12 @@
                     <!-- information section -->
                     <div class="row">
                         <div class="col-12" id="info">
+
                             <!-- subtitle -->
                             <p id="bodyname">title</p>
                             <!-- <p id="bodyname-sub">sub</p> -->
-                            <hr>
+                            <br>
+                            <br>
                             <!-- content -->
                             <div id="content">點擊地圖查看各縣市老年人口比例</div>
                         </div>
@@ -87,7 +101,7 @@
             <div class="col-4">
                 <footer>
                     <hr>
-                    <p><i>&copy 2020 Lily edit<br><a
+                    <p><i>&copy 2020 Lily Huang edit<br><a
                                 href="https://lily410363.github.io">https://lily410363.github.io</a></i>
                     </p>
                 </footer>
@@ -107,11 +121,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous ">
     </script>
 
-    <!-- w3school prewritten libary (for including html from other file) -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script>
-        w3.includeHTML();
-    </script>
+
 
     <!-- self written javascript -->
     <script src="./js/training.js"></script>
