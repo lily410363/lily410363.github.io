@@ -13,9 +13,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- self-defined css -->
-    <link rel="stylesheet" href="./css/misc.css">
-    <link rel="stylesheet" href="./css/title.css">
-    <link rel="stylesheet" href="./css/navbar.css">
+    <!-- <link rel="stylesheet" href="./css/misc.css"> -->
+    <!-- <link rel="stylesheet" href="./css/title.css"> -->
+    <!-- <link rel="stylesheet" href="./css/navbar.css"> -->
     <link rel="stylesheet" href="./css/bodypart.css">
     <!-- <link rel="stylesheet" href="./css/tarot.css"> -->
 
@@ -27,7 +27,7 @@
 
 </head>
 
-<body style="background-color:transparent">
+<body style="background-color:transparent" id=page1>
 
 
     <!-- 網頁內容 -->
@@ -40,21 +40,20 @@
             <h4 class="title title2" style="color: bisque;">用地圖看台灣人口老化程度
             </h4>
             <hr>
-            <div class="descrip">
-                <h5>歡迎進入老化的世界！</h5>
+            <div id="descrip">
+                <p>
+                    <h5>歡迎進入老化的世界！
+                </p>
+                <p>
+                    <h5>統計數據顯示，</h5><br>
+                    <h5>台灣的老年人口已在2018年超過14%，進入超高齡社會，</h5><br>
+                    <h5>高齡人口將在2065超過20%，老化速度超越日本。</h5><br>
 
-                <p></p>
+                </p>
 
-
-                <h5>統計數據顯示，
-                    <br>台灣的老年人口已在2018年超過14%，進入超高齡社會
-                    <br>預計高齡人口將在2065超過20%，老化速度超越日本。
-
-                    <p></p>
-                    <br>
-
-                    用數據與地圖，了解台灣老化現況
-                </h5>
+                <p>
+                    <h5>用數據與地圖，了解台灣老化現況</h5>
+                </p>
             </div>
 
         </div>
@@ -64,7 +63,7 @@
                 <a class="btn btn1" href="./index.html">
                     <h3>點我看地圖</h3>
                 </a>
-                <a class="btn btn2" href="./table.html">
+                <a class=" btn btn2" href="./table.html">
                     <h3>點我看排名</h3>
                 </a>
             </div>
@@ -74,6 +73,7 @@
         </div>
 
     </div>
+    
 
 
     <!-- 引用 Bootstrap 的 JS -->
@@ -86,6 +86,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./js/ctrl-hello.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 
-font-family: ‘cwTeXFangSong’,
-serif;
+
 
 .jumbotron {
     /* background-color: transparent; */
@@ -18,12 +17,13 @@ serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    position: relative;
+    position: absolute;
     width: 100%;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 60px;
     color: bisque;
-    font-weight: lighter
+    font-weight: lighter;
+    margin-top: -33px;
 }
 
 .title2 {
@@ -31,19 +31,22 @@ serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    position: relative;
+    position: absolute;
     width: 100%;
     /* font-weight: bold; */
     font-size: 40px;
     color: bisque;
-    font-weight: lighter
+    font-weight: lighter;
+    margin-top: 30px;
 }
 
 .descrip {
-    margin-top: 30px;
+    margin-top: 100px;
     font-family: cwTeXFangSong;
     text-align: center;
     color: whitesmoke;
+    text-align: center;
+    margin-left: 84px;
 }
 
 
@@ -69,17 +72,34 @@ a.btn {
     /* font-family: sans-serif; */
     font-family: cwTeXFangSong;
     /* font-weight: bold; */
-    margin-top: -30px;
+    margin-top: -1px;
 }
 
 a.btn1 {
-    margin-left: 30%;
+    margin-left: 32%;
 }
 
 a.btn2 {
-    margin-right: 30%;
+    margin-right: 22%;
 }
 
 a.btn:hover {
     background-color: khaki;
+    /* width: 210px;
+    height: 55px; */
+    /* font-size: larger; */
+
+}
+
+/* table.html */
+.title3 {
+    color: #212f6b;
+    font-size: 24px;
+}
+
+.title4 {
+    color: #212f6b;
+    font-size: 30px;
+    /* margin-top: 1px; */
+
 }

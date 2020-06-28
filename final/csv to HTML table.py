@@ -23,7 +23,8 @@ print("</th>")
 
 
 import csv
-infile=csv.reader("rank10.csv", 'r') 
+infile=csv.reader("rank10", 'r') 
+with open('rank10.csv')as infile
 for line in infile:
     print(line)
 

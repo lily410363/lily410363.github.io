@@ -10,14 +10,14 @@ $(() => {
     var initial_content = ["肌肉介紹", "訓練影片", "點擊左方人體肌肉圖或右上角下拉清單選擇身體部位"]
 
     var show_training = (part_id) => {
-        console.log("get input part name : " + part_id + ", type : " + typeof(part_id))
+        console.log("get input part name : " + part_id + ", type : " + typeof (part_id))
         var part = training_data[part_id]
         console.log(training_data["chest-area"])
         var title = part[0]
         $("#bodyname").html(title)
         $("#content").empty()
         $("g.current").removeClass("current")
-        $("g[partname=" + part_id + "]").addClass("current")
+        $("g[partname=" + part_id + "]").addClass("current") //current class為了讓點選到的g有不同css
 
         for (var i = 1; i < part.length; i++) {
             // console.log(part[i])
@@ -31,8 +31,8 @@ $(() => {
         }
     }
 
-    var show_muscle = (part_id) => {
-        console.log("get input part name : " + part_id + ", type : " + typeof(part_id))
+    var show_muscle = (part_id) => { //丟入partname
+        console.log("get input part name : " + part_id + ", type : " + typeof (part_id))
         var part = muscles_data[part_id]
         console.log(training_data["chest-area"])
         var title = part[0]
@@ -58,24 +58,26 @@ $(() => {
         $("g.current").removeClass("current")
     })
 
-    // open the info of which part being clicked
+    // 點擊圖片
     $("path").on("click", (e) => {
-        var partName = $(e.target).parent().attr("partname")
+        var partName = $(e.target).parent().attr("partname") //點到g的時候，找path裡的 partname的資料
         console.log(partName)
+        if ($(".active").text().trim() === "Training")
+            show_training(partName) //丟入上面寫的function
+        if ($(".active").text().trim() === "Muscles")
+            show_muscle(partName)
+    })
+
+    // 下拉選單
+    $("a.dropdown-item").on("click", (e) => {
+        var partName = $(e.target).attr("partname")
         if ($(".active").text().trim() === "Training")
             show_training(partName)
         if ($(".active").text().trim() === "Muscles")
             show_muscle(partName)
     })
 
-    $("a.dropdown-item").on("click", (e) => {
-        var partName = $(e.target).attr("partname")   
-        if ($(".active").text().trim() === "Training")
-            show_training(partName)
-        if ($(".active").text().trim() === "Muscles")
-            show_muscle(partName)
-    })
-    $('a[href^="#"]').click(function(e) {
+    $('a[href^="#"]').click(function (e) {
         e.preventDefault();
     });
 
