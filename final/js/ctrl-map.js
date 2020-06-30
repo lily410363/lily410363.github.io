@@ -37,3 +37,8 @@ $(() => {
 
 
 })
+
+
+$("#setting").onclick = function () {
+    window.open('https://www.youtube.com/watch?v=XKyurcQXx5o', '_blank');
+}
