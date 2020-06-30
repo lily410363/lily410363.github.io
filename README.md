@@ -1,4 +1,7 @@
-# 參考模板
+Hi, this is my personal resume website, in which you can see my projects, learning experience and know me better :)
+
+
+## 參考模板
 
 本網站使用**Colorlib-Elen** 作為模板
 
